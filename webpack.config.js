@@ -2,12 +2,11 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
-    watch:true,
     mode:'development',
     entry:'./src/index.js',
     output:{
         filename:'bundle.js',
-        path:path.resolve(__dirname,'src')
+        path:path.resolve(__dirname,'./src')
     },
     module:{
         rules:[
